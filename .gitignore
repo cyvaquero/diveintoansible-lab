@@ -1,0 +1,4 @@
+# diveintoansible-lab .gitignore file
+#
+
+ansible_home
