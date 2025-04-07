@@ -12,6 +12,7 @@ services:
      - ${ANSIBLE_HOME}/shared:/shared
      - ${ANSIBLE_HOME}/ubuntu-c/ansible:/home/ansible
      - ${ANSIBLE_HOME}/ubuntu-c/root:/root
+     - /Users/heckmang/Development/training/diveintoansible:/home/ansible/diveintoansible
     networks:
      - diveinto.io
 
@@ -68,7 +69,8 @@ services:
     container_name: centos1
     image: spurin/diveintoansible:centos_stream
     ports: 
-     - ${CENTOS1_PORT_SSHD}:22
+     #- ${CENTOS1_PORT_SSHD}:22
+     - ${CENTOS1_PORT_SSHD}:2222
      - ${CENTOS1_PORT_TTYD}:7681
     privileged: true
     volumes:
