@@ -1,7 +1,7 @@
-# hugo-guyheckman_me .gitignore file
+# diveintoansible-lab .gitignore file
 #
 
-## Hugo Project Patterns
+## diveintoansible-lab Patterns
 ansible_home/
 
 
